@@ -1,90 +1,90 @@
-Chess Data Analysis
+♟️ Chess Data Analysis
 
-This project performs an exploratory data analysis (EDA) on a dataset of chess games to investigate how player levels and time controls influence game outcomes. The analysis also explores popular chess openings and their distribution among different skill levels.
+This project performs an exploratory data analysis (EDA) on a chess games dataset to explore how player levels and time controls influence game outcomes, as well as analyzing popular chess openings.
 
-Project Overview
+🏆 Project Overview
 
-Goal: To understand how different player levels (Beginner, Intermediate, Advanced) and game time controls (Blitz, Rapid, Long Rapid) affect chess outcomes (mate, resign, outoftime, draw).
+Goal: Understand how player skill levels (Beginner, Intermediate, Advanced) and game time controls (Blitz, Rapid, Long Rapid) affect chess outcomes (mate, resign, outoftime, draw).
 
-Dataset: Chess games dataset (games.csv) containing information about players, ratings, game results, number of turns, time control, and openings.
+Dataset: games.csv containing player info, ratings, results, number of turns, time controls, and openings.
 
 Tools: Python 3, Pandas, NumPy, Matplotlib
 
-Data Processing
+🛠️ Data Processing
 
-Time Control Classification:
+⏱️ Time Control Classification
 
-Extracted the base time from increment_code.
+Extracted base time from increment_code.
 
-Categorized games into:
+Categories:
 
-Blitz (≤5 min)
+Blitz (≤5 min) ⚡
 
-Rapid (6–29 min)
+Rapid (6–29 min) ⏩
 
-Long Rapid (≥30 min)
+Long Rapid (≥30 min) 🐢
 
-Player Level Classification:
+🎯 Player Level Classification
 
-Computed the average rating of both players.
+Average rating of both players computed.
 
-Categorized into:
+Categories:
 
-Beginner (≤1400)
+Beginner (≤1400) 🟢
 
-Intermediate (1401–1799)
+Intermediate (1401–1799) 🟡
 
-Advanced (≥1800)
+Advanced (≥1800) 🔴
 
-Additional Columns:
+➕ Additional Columns
 
-game_type: Stores the time control category.
+game_type: Time control category.
 
-level: Stores the player skill level.
+level: Player skill level.
 
-higher_rating: Indicates which player had a higher rating in each game.
+higher_rating: Player with the higher rating in each game.
 
-Key Visualizations
+📊 Key Visualizations
 
-Game Outcomes:
+Game Outcomes 🎨
 
-Bar plot showing distribution of outcomes (mate, resign, outoftime, draw) across all games.
+Bar plot showing distribution of outcomes: mate, resign, outoftime, draw.
 
-Turns by Player Level:
+Turns by Player Level 🧮
 
-Boxplot showing the number of turns played for each skill level.
+Boxplot showing number of turns played for each skill level.
 
-Outcomes by Time Control:
+Outcomes by Time Control ⏳
 
 Stacked bar chart showing outcomes across Blitz, Rapid, and Long Rapid games.
 
-Distribution of Player Levels:
+Distribution of Player Levels 📈
 
 Pie chart showing proportion of games played by Beginners, Intermediates, and Advanced players.
 
-Wins by Player Color:
+Wins by Player Color ⚪⚫
 
-Pie chart showing win distribution for white, black, and draw outcomes.
+Pie chart showing wins for white, black, and draws.
 
-Correlation of Rating Difference and Outcome:
+Correlation of Rating Difference and Outcome 📊
 
 Stacked bar chart showing outcomes based on which player had the higher rating.
 
-Top Chess Openings by Level:
+Top Chess Openings by Level 📖
 
 Bar charts showing the five most frequently played openings per skill level.
 
-Insights
+🔍 Insights
 
-Outcomes are influenced by both player rating and time control.
+Game outcomes are influenced by player rating and time control.
 
-White slightly wins more often than black, with draws being relatively rare.
+White slightly wins more often than black, while draws are rare.
 
 Certain openings are more popular among specific skill levels.
 
 Blitz games tend to finish faster and have more out-of-time results.
 
-How to Use
+🚀 How to Use
 
 Clone the repository:
 
@@ -96,26 +96,26 @@ Install dependencies:
 pip install -r requirements.txt
 
 
-Run the analysis notebook to generate plots:
+Run the notebook:
 
 jupyter notebook Chess_Analysis.ipynb
 
-Requirements
+📦 Requirements
 
-Python 3.8+
+Python 3.8+ 🐍
 
-Pandas
+Pandas 🐼
 
-NumPy
+NumPy 🔢
 
-Matplotlib
+Matplotlib 📊
 
-Jupyter Notebook (optional, for running the notebook)
+Jupyter Notebook (optional) 💻
 
-Future Work
+🌟 Future Work
 
-Fix the heatmap generation for opening differences by converting the index set to a list.
+Fix the heatmap generation issue (convert set to list).
 
-Explore machine learning models to predict game outcomes based on player rating, level, and opening.
+Build ML models to predict game outcomes based on player rating, level, and opening.
 
-Interactive dashboards using Plotly or Dash for better visualization.
+Create interactive dashboards using Plotly or Dash.
