@@ -114,8 +114,6 @@ Jupyter Notebook (optional) 💻
 
 🌟 Future Work
 
-Fix the heatmap generation issue (convert set to list).
-
 Build ML models to predict game outcomes based on player rating, level, and opening.
 
 Create interactive dashboards using Plotly or Dash.
